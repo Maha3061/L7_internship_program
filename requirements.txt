@@ -1,0 +1,6 @@
+# requirements.txt
+
+customtkinter==5.2.2
+
+# No specific version needed for sqlite3 (included with Python)
+# No specific version needed for tkinter (included with Python)
