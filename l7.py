@@ -183,7 +183,7 @@ def add_offering_items():
         widget.destroy()
 
     frame2 = customtkinter.CTkFrame(app, bg_color='#C0FBFF', fg_color='#C0FBFF')
-    frame2.place(relx=0.2, rely=0.1, relwidth=0.6, relheight=0.6)  # Increase relheight to provide more space for buttons
+    frame2.place(relx=0.2, rely=0.1, relwidth=0.6, relheight=0.6)  
 
     title_label = customtkinter.CTkLabel(frame2, font=font1, text='Welcome to Ice Cream Parlor Cafe', text_color='#fff',
                                          bg_color='#001220')
