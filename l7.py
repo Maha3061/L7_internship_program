@@ -285,7 +285,7 @@ def search_allergens_items():
         allergen_to_search = search_allergens_entry.get()
         if allergen_to_search:
             cursor.execute('SELECT * FROM allergens')
-            return c.fetchall()
+            result= cursor.fetchall()
             if results:
                 result_frame = customtkinter.CTkFrame(frame2, bg_color='#C0FBFF', fg_color='#C0FBFF')
                 result_frame.place(relx=0.1, rely=0.4, relwidth=0.8, relheight=0.5)
@@ -295,7 +295,7 @@ def search_allergens_items():
                 header_label.pack()
 
                 for idx, result in enumerate(results):
-                    flavor_label = customtkinter.CTkLabel(result_frame, text=f"{idx + 1}. {result[1]} - {result[2]}",
+                    flavor_label = customtkinter.CTkLabel(result_frame, text=f"{idx + 1}. {result[1]}",
                                                           font=font2, text_color='#000000')
                     flavor_label.pack()
 
